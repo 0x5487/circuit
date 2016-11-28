@@ -1,0 +1,26 @@
+{
+  "name": "circuit",
+  "version": "1.0.0",
+  "description": "circuit ui test",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "electron-packager ./",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonsoft/circuit.git"
+  },
+  "keywords": [],
+  "author": "Jason Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonsoft/circuit/issues"
+  },
+  "homepage": "https://github.com/jasonsoft/circuit#readme",
+  "devDependencies": {
+    "electron-packager": "^8.3.0",
+    "electron-prebuilt": "^1.4.8",
+    "rimraf": "^2.5.4"
+  }
+}
