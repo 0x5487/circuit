@@ -1,6 +1,24 @@
 <html>
+
+<head>
     <title>Hi</title>
-    <body>
-        <h1>Hello World1s</h1>
-    </body>
+    <script>window.$ = window.jQuery = require('./jquery.js');</script>
+</head>
+
+<body>
+    <h1>Hello World1s</h1>
+    <span id="myspan"> hereismytext </span>
+</body>
+<script>
+        function Hello(){
+            var request = require('superagent/superagent');
+            request
+            .get("https://tw.yahoo.com/")
+            .end(function(err, res){
+                $("#myspan").text(res.status)
+            });            
+        }
+        Hello();
+    </script>
+
 </html>
